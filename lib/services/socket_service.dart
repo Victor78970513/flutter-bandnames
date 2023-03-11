@@ -22,7 +22,8 @@ class SocketService with ChangeNotifier {
 
   void _initConfig() {
     _socket = io(
-        'http://192.168.0.20:3000',
+        // 'http://192.168.0.20:3000',
+        'https://flutter-sockets-wiscocho-server.onrender.com',
         OptionBuilder()
             .setTransports(['websocket'])
             .enableAutoConnect()
